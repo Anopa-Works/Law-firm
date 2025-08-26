@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Justice Law Partners | Premier Legal Services</title>
+    <title>Kajokoto & Company Legal Practitioners | Comprehensive Legal Services</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -410,6 +410,26 @@
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
         
+        .offices {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+        
+        .office {
+            background: var(--champagne-light);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+        
+        .office h4 {
+            color: var(--navy-blue);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--champagne-gold);
+            padding-bottom: 0.5rem;
+        }
+        
         @media (max-width: 768px) {
             .header-container {
                 flex-direction: column;
@@ -442,6 +462,10 @@
             .contact-grid {
                 grid-template-columns: 1fr;
             }
+            
+            .offices {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -449,12 +473,12 @@
     <header>
         <div class="container header-container">
             <div class="logo">
-                <div class="logo-text">Justice<span class="logo-highlight">Law</span></div>
+                <div class="logo-text">Kajokoto & Company<br><span class="logo-highlight">Legal Practitioners</span></div>
             </div>
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#practice-areas">Practice Areas</a></li>
+                    <li><a href="#practice-areas">Services</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -467,10 +491,10 @@
     <section class="hero">
         <div class="container hero-content">
             <h1>Expert Legal Representation You Can Trust</h1>
-            <p>With over 25 years of experience, our team of dedicated attorneys is committed to achieving the best possible outcomes for our clients.</p>
+            <p>With extensive experience in Zimbabwean law, our team of dedicated legal practitioners is committed to achieving the best possible outcomes for our clients.</p>
             <div class="hero-btns">
-                <a href="#contact" class="btn btn-primary">Schedule a Consultation</a>
-                <a href="#about" class="btn btn-secondary">Learn More About Us</a>
+                <a href="#contact" class="btn btn-primary">Schedule Consultation</a>
+                <a href="#practice-areas" class="btn btn-secondary">Our Services</a>
             </div>
         </div>
     </section>
@@ -478,26 +502,36 @@
     <section id="practice-areas" class="practice-areas">
         <div class="container">
             <div class="section-title">
-                <h2>Our Practice Areas</h2>
+                <h2>Our Legal Services</h2>
             </div>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-gavel"></i>
+                        <i class="fas fa-mountain"></i>
                     </div>
                     <div class="service-content">
-                        <h3>Corporate Law</h3>
-                        <p>We provide comprehensive legal services for businesses of all sizes, from formation to compliance and litigation.</p>
+                        <h3>Mining Law Consultants</h3>
+                        <p>Comprehensive legal services for mining companies including licensing, compliance, and regulatory matters in Zimbabwe's mining sector.</p>
                         <a href="#contact" class="contact-btn">Learn More</a>
                     </div>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-users"></i>
+                        <i class="fas fa-briefcase"></i>
                     </div>
                     <div class="service-content">
-                        <h3>Family Law</h3>
-                        <p>Our compassionate attorneys handle divorce, child custody, and other sensitive family matters with discretion.</p>
+                        <h3>Labour Consultants</h3>
+                        <p>Expert advice on employment law, workplace disputes, contracts, and compliance with Zimbabwe's labour regulations.</p>
+                        <a href="#contact" class="contact-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-signature"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Notaries Public</h3>
+                        <p>Professional notarization services for legal documents, affidavits, and certifications for both individuals and businesses.</p>
                         <a href="#contact" class="contact-btn">Learn More</a>
                     </div>
                 </div>
@@ -506,8 +540,48 @@
                         <i class="fas fa-home"></i>
                     </div>
                     <div class="service-content">
-                        <h3>Real Estate Law</h3>
-                        <p>From transactions to disputes, we help clients navigate the complex world of real estate law.</p>
+                        <h3>Conveyancers</h3>
+                        <p>Complete property transfer services, title deeds processing, and real estate legal support throughout Zimbabwe.</p>
+                        <a href="#contact" class="contact-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-scale-balanced"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Executors & Advocates</h3>
+                        <p>Professional estate execution services and legal advocacy in courts for various civil and commercial matters.</p>
+                        <a href="#contact" class="contact-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Administration of Estates</h3>
+                        <p>Comprehensive estate administration services including wills, trusts, and estate planning for clients throughout Zimbabwe.</p>
+                        <a href="#contact" class="contact-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Tax Lawyers</h3>
+                        <p>Expert legal advice on tax compliance, disputes with ZIMRA, tax planning, and representation in tax matters.</p>
+                        <a href="#contact" class="contact-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-stamp"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Commission of Oaths</h3>
+                        <p>Official commissioning services for sworn statements, affidavits, and other legal documents requiring certification.</p>
                         <a href="#contact" class="contact-btn">Learn More</a>
                     </div>
                 </div>
@@ -519,14 +593,14 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h2>About Justice Law Partners</h2>
-                    <p>Founded in 1998, Justice Law Partners has built a reputation for excellence in legal representation. Our team of experienced attorneys is dedicated to providing personalized service and achieving favorable outcomes for our clients.</p>
-                    <p>We believe in the power of the law to protect rights, resolve disputes, and create opportunities. Our commitment to integrity, professionalism, and client satisfaction sets us apart.</p>
+                    <h2>About Kajokoto & Company</h2>
+                    <p>Kajokoto & Company Legal Practitioners has built a reputation for excellence in legal representation across Zimbabwe. Our team of experienced legal practitioners is dedicated to providing personalized service and achieving favorable outcomes for our clients.</p>
+                    <p>We believe in the power of the law to protect rights, resolve disputes, and create opportunities. Our commitment to integrity, professionalism, and client satisfaction sets us apart in the Zimbabwean legal landscape.</p>
                     <a href="#contact" class="btn btn-primary">Meet Our Team</a>
                 </div>
                 <div class="about-image">
                     <div style="height: 300px; background-color: #0A1931; display: flex; align-items: center; justify-content: center; color: #D4AF37;">
-                        <i class="fas fa-building" style="font-size: 4rem;"></i>
+                        <i class="fas fa-balance-scale" style="font-size: 4rem;"></i>
                     </div>
                 </div>
             </div>
@@ -541,34 +615,34 @@
             <div class="testimonial-grid">
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        <p>"Justice Law Partners handled my corporate merger with exceptional skill and attention to detail. They made a complex process smooth and manageable."</p>
+                        <p>"Kajokoto & Company provided exceptional legal guidance for our mining operations. Their knowledge of Zimbabwean mining law is unparalleled."</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-details">
-                            <div class="author-name">Robert Johnson</div>
-                            <div class="author-title">CEO, TechInnovate Inc.</div>
+                            <div class="author-name">Tawanda Moyo</div>
+                            <div class="author-title">Mining Executive</div>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        <p>"During my difficult divorce, their family law team provided not only excellent legal representation but also much-needed emotional support."</p>
+                        <p>"Their conveyancing team made our property purchase seamless. Professional and efficient service throughout the process."</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-details">
-                            <div class="author-name">Sarah Williams</div>
-                            <div class="author-title">Client</div>
+                            <div class="author-name">Sarah Chikwava</div>
+                            <div class="author-title">Property Investor</div>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        <p>"The real estate attorneys at Justice Law Partners saved my commercial property deal when unexpected legal issues arose. I couldn't be more grateful."</p>
+                        <p>"The estate administration services were handled with compassion and professionalism during our difficult time."</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-details">
-                            <div class="author-name">Michael Chen</div>
-                            <div class="author-title">Property Developer</div>
+                            <div class="author-name">The Maphosa Family</div>
+                            <div class="author-title">Clients</div>
                         </div>
                     </div>
                 </div>
@@ -585,11 +659,11 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i class="fas fa-envelope"></i>
                         </div>
                         <div>
-                            <h4>Office Address</h4>
-                            <p>123 Legal Avenue, Suite 500<br>New York, NY 10001</p>
+                            <h4>Email Address</h4>
+                            <p>zrkajokoto@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -597,26 +671,37 @@
                             <i class="fas fa-phone"></i>
                         </div>
                         <div>
-                            <h4>Phone Number</h4>
-                            <p>(212) 555-0123</p>
+                            <h4>Telephone</h4>
+                            <p>+263 271 7453</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-fax"></i>
                         </div>
                         <div>
-                            <h4>Email Address</h4>
-                            <p>info@justicelawpartners.com</p>
+                            <h4>Fax</h4>
+                            <p>+263 271 7453</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <i class="fas fa-clock"></i>
+                            <i class="fas fa-mobile-alt"></i>
                         </div>
                         <div>
-                            <h4>Office Hours</h4>
-                            <p>Monday-Friday: 9am-5pm<br>Saturday: By appointment only</p>
+                            <h4>Mobile Numbers</h4>
+                            <p>0772 765 099<br>0772 943 877<br>0712 913 624</p>
+                        </div>
+                    </div>
+                    
+                    <div class="offices">
+                        <div class="office">
+                            <h4>Bindura Office</h4>
+                            <p>847 Alphablock Complex<br>1st Floor South Wing<br>Bindura, Zimbabwe</p>
+                        </div>
+                        <div class="office">
+                            <h4>Harare Office</h4>
+                            <p>69 Munro Drive<br>Cranbourne<br>Harare, Zimbabwe</p>
                         </div>
                     </div>
                 </div>
@@ -627,14 +712,17 @@
                         <input type="email" placeholder="Your Email" required>
                         <input type="tel" placeholder="Your Phone">
                         <select required>
-                            <option value="" disabled selected>Select Practice Area</option>
-                            <option value="corporate">Corporate Law</option>
-                            <option value="family">Family Law</option>
-                            <option value="realestate">Real Estate Law</option>
-                            <option value="litigation">Litigation</option>
-                            <option value="other">Other</option>
+                            <option value="" disabled selected>Select Service Needed</option>
+                            <option value="mining">Mining Law Consultation</option>
+                            <option value="labour">Labour Consultation</option>
+                            <option value="notary">Notary Services</option>
+                            <option value="conveyancing">Conveyancing</option>
+                            <option value="executor">Executor Services</option>
+                            <option value="estates">Estate Administration</option>
+                            <option value="tax">Tax Law</option>
+                            <option value="oaths">Commission of Oaths</option>
                         </select>
-                        <textarea placeholder="How can we help you?" rows="5" required></textarea>
+                        <textarea placeholder="How can we assist you?" rows="5" required></textarea>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
                 </div>
@@ -646,17 +734,17 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-about">
-                    <div class="footer-logo">Justice<span class="logo-highlight">Law</span></div>
-                    <p>Providing exceptional legal services since 1998. Our team of experienced attorneys is dedicated to achieving the best outcomes for our clients.</p>
+                    <div class="footer-logo">Kajokoto & Company<br><span class="logo-highlight">Legal Practitioners</span></div>
+                    <p>Providing exceptional legal services throughout Zimbabwe. Our team of experienced legal practitioners is dedicated to achieving the best outcomes for our clients.</p>
                 </div>
                 <div class="footer-links">
-                    <h3>Practice Areas</h3>
+                    <h3>Our Services</h3>
                     <ul>
-                        <li><a href="#">Corporate Law</a></li>
-                        <li><a href="#">Family Law</a></li>
-                        <li><a href="#">Real Estate Law</a></li>
-                        <li><a href="#">Intellectual Property</a></li>
-                        <li><a href="#">Litigation</a></li>
+                        <li><a href="#practice-areas">Mining Law Consultants</a></li>
+                        <li><a href="#practice-areas">Labour Consultants</a></li>
+                        <li><a href="#practice-areas">Notaries Public</a></li>
+                        <li><a href="#practice-areas">Conveyancers</a></li>
+                        <li><a href="#practice-areas">Executors & Advocates</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
@@ -664,16 +752,16 @@
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#about">About Us</a></li>
-                        <li><a href="#practice-areas">Practice Areas</a></li>
+                        <li><a href="#practice-areas">Services</a></li>
                         <li><a href="#testimonials">Testimonials</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2023 Justice Law Partners. All rights reserved.</p>
+                <p>&copy; 2023 Kajokoto & Company Legal Practitioners. All rights reserved.</p>
             </div>
         </div>
     </footer>
 </body>
-</html>
+    </html>
