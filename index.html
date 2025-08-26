@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kajokoto & Company Legal Practitioners | Comprehensive Legal Services</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Serif+Pro&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Georgia', serif;
         }
         
         body {
             color: #333;
             line-height: 1.6;
             background-color: #f8f9fa;
+            font-family: 'Source Serif Pro', serif;
         }
         
         .container {
@@ -36,12 +37,14 @@
         h1, h2, h3, h4, h5, h6 {
             color: var(--navy-blue);
             margin-bottom: 1rem;
+            font-family: 'Playfair Display', serif;
         }
         
         p {
             margin-bottom: 1rem;
         }
         
+        /* Enhanced Header with Logo */
         header {
             background-color: var(--navy-blue);
             padding: 1rem 0;
@@ -57,20 +60,49 @@
             align-items: center;
         }
         
-        .logo {
+        .logo-container {
             display: flex;
             align-items: center;
+            gap: 15px;
         }
         
-        .logo-text {
-            color: var(--white);
+        .custom-logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            background: linear-gradient(135deg, var(--navy-blue) 0%, var(--navy-blue-light) 100%);
+            border: 2px solid var(--champagne-gold);
+            border-radius: 8px;
+            min-width: 180px;
+            height: 80px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .logo-main {
+            font-family: 'Playfair Display', serif;
             font-size: 1.8rem;
             font-weight: bold;
-            margin-left: 10px;
+            color: var(--champagne-gold);
+            letter-spacing: 1px;
+            text-align: center;
+            line-height: 1.1;
         }
         
-        .logo-highlight {
-            color: var(--champagne-gold);
+        .logo-sub {
+            font-family: 'Source Serif Pro', serif;
+            font-size: 0.9rem;
+            color: var(--white);
+            margin-top: 5px;
+            letter-spacing: 0.5px;
+        }
+        
+        .logo-tagline {
+            font-size: 0.7rem;
+            color: var(--champagne-light);
+            font-style: italic;
+            margin-top: 2px;
         }
         
         nav ul {
@@ -87,6 +119,7 @@
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s;
+            font-size: 1.1rem;
         }
         
         nav ul li a:hover {
@@ -101,12 +134,15 @@
             font-weight: bold;
             text-decoration: none;
             transition: background-color 0.3s;
+            font-size: 1.1rem;
         }
         
         .contact-btn:hover {
             background-color: var(--champagne-light);
+            transform: translateY(-2px);
         }
         
+        /* Hero Section */
         .hero {
             background: linear-gradient(to right, var(--navy-blue), var(--navy-blue-light));
             color: var(--white);
@@ -123,6 +159,7 @@
             font-size: 3rem;
             color: var(--white);
             margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
         
         .hero p {
@@ -143,6 +180,7 @@
             text-decoration: none;
             font-weight: bold;
             transition: all 0.3s;
+            font-size: 1.1rem;
         }
         
         .btn-primary {
@@ -152,6 +190,7 @@
         
         .btn-primary:hover {
             background-color: var(--champagne-light);
+            transform: translateY(-2px);
         }
         
         .btn-secondary {
@@ -162,8 +201,10 @@
         
         .btn-secondary:hover {
             background-color: rgba(212, 175, 55, 0.1);
+            transform: translateY(-2px);
         }
         
+        /* Practice Areas */
         .practice-areas {
             padding: 5rem 0;
             background-color: var(--white);
@@ -203,11 +244,13 @@
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #eee;
         }
         
         .service-card:hover {
             transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
         }
         
         .service-icon {
@@ -225,8 +268,10 @@
         .service-content h3 {
             color: var(--navy-blue);
             margin-bottom: 1rem;
+            font-size: 1.4rem;
         }
         
+        /* About Section */
         .about {
             padding: 5rem 0;
             background-color: #f8f9fa;
@@ -255,6 +300,7 @@
             display: block;
         }
         
+        /* Testimonials */
         .testimonials {
             padding: 5rem 0;
             background-color: var(--navy-blue);
@@ -276,6 +322,7 @@
             padding: 2rem;
             border-radius: 8px;
             position: relative;
+            border: 1px solid var(--champagne-gold);
         }
         
         .testimonial-card::before {
@@ -291,6 +338,7 @@
         .testimonial-text {
             margin-bottom: 1.5rem;
             font-style: italic;
+            line-height: 1.8;
         }
         
         .testimonial-author {
@@ -307,6 +355,7 @@
             color: var(--champagne-gold);
         }
         
+        /* Contact Section */
         .contact {
             padding: 5rem 0;
             background-color: var(--white);
@@ -339,6 +388,7 @@
             align-items: center;
             justify-content: center;
             margin-right: 1rem;
+            font-size: 1.1rem;
         }
         
         .contact-form form {
@@ -354,6 +404,7 @@
             border: 1px solid #ddd;
             border-radius: 4px;
             font-size: 1rem;
+            font-family: 'Source Serif Pro', serif;
         }
         
         .contact-form textarea {
@@ -375,15 +426,23 @@
         }
         
         .footer-logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             color: var(--white);
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             font-weight: bold;
             margin-bottom: 1rem;
+        }
+        
+        .footer-logo span {
+            color: var(--champagne-gold);
         }
         
         .footer-links h3 {
             color: var(--champagne-gold);
             margin-bottom: 1.5rem;
+            font-size: 1.3rem;
         }
         
         .footer-links ul {
@@ -408,6 +467,7 @@
             text-align: center;
             padding-top: 2rem;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
         }
         
         .offices {
@@ -421,6 +481,7 @@
             background: var(--champagne-light);
             padding: 1.5rem;
             border-radius: 8px;
+            border: 1px solid var(--champagne-gold);
         }
         
         .office h4 {
@@ -428,22 +489,35 @@
             margin-bottom: 1rem;
             border-bottom: 2px solid var(--champagne-gold);
             padding-bottom: 0.5rem;
+            font-size: 1.2rem;
         }
         
+        /* Responsive Design */
         @media (max-width: 768px) {
             .header-container {
                 flex-direction: column;
                 text-align: center;
+                gap: 1rem;
+            }
+            
+            .custom-logo {
+                min-width: 160px;
+                height: 70px;
+            }
+            
+            .logo-main {
+                font-size: 1.5rem;
             }
             
             nav ul {
                 margin-top: 1rem;
                 flex-wrap: wrap;
                 justify-content: center;
+                gap: 1rem;
             }
             
             nav ul li {
-                margin: 0.5rem;
+                margin: 0;
             }
             
             .hero h1 {
@@ -470,10 +544,15 @@
     </style>
 </head>
 <body>
+    <!-- Header with Enhanced Logo -->
     <header>
         <div class="container header-container">
-            <div class="logo">
-                <div class="logo-text">Kajokoto & Company<br><span class="logo-highlight">Legal Practitioners</span></div>
+            <div class="logo-container">
+                <div class="custom-logo">
+                    <div class="logo-main">KAJOKOTO & CO</div>
+                    <div class="logo-sub">LEGAL PRACTITIONERS</div>
+                    <div class="logo-tagline">LLB (Hon)</div>
+                </div>
             </div>
             <nav>
                 <ul>
@@ -488,6 +567,7 @@
         </div>
     </header>
 
+    <!-- Rest of your website content remains exactly the same -->
     <section class="hero">
         <div class="container hero-content">
             <h1>Expert Legal Representation You Can Trust</h1>
@@ -734,7 +814,10 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-about">
-                    <div class="footer-logo">Kajokoto & Company<br><span class="logo-highlight">Legal Practitioners</span></div>
+                    <div class="footer-logo">
+                        <span>KAJOKOTO & COMPANY</span><br>
+                        LEGAL PRACTITIONERS
+                    </div>
                     <p>Providing exceptional legal services throughout Zimbabwe. Our team of experienced legal practitioners is dedicated to achieving the best outcomes for our clients.</p>
                 </div>
                 <div class="footer-links">
@@ -764,4 +847,4 @@
         </div>
     </footer>
 </body>
-    </html>
+</html>
