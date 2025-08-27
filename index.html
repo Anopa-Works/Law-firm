@@ -492,6 +492,17 @@
             font-size: 1.2rem;
         }
         
+        /* Form Success Message */
+        .form-success {
+            display: none;
+            background-color: #d4edda;
+            color: #155724;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+            text-align: center;
+        }
+        
         /* Responsive Design */
         @media (max-width: 768px) {
             .header-container {
@@ -787,11 +798,15 @@
                 </div>
                 <div class="contact-form">
                     <h3>Send Us a Message</h3>
-                    <form>
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <input type="tel" placeholder="Your Phone">
-                        <select required>
+                    <form action="https://formsubmit.co/zrkajokoto@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New Client Message - Kajokoto Law">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="tel" name="phone" placeholder="Your Phone">
+                        <select name="service" required>
                             <option value="" disabled selected>Select Service Needed</option>
                             <option value="mining">Mining Law Consultation</option>
                             <option value="labour">Labour Consultation</option>
@@ -802,7 +817,7 @@
                             <option value="tax">Tax Law</option>
                             <option value="oaths">Commission of Oaths</option>
                         </select>
-                        <textarea placeholder="How can we assist you?" rows="5" required></textarea>
+                        <textarea name="message" placeholder="How can we assist you?" rows="5" required></textarea>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
                 </div>
